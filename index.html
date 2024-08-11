@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Stopwatch</title>
+    <link rel="stylesheet" href="/stopwatch/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">Online Stopwatch</a>
+            </div>
+
+            <ul id="menuList" class="hidden">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+
+            <div class="menu-icon">
+                <i class="ph ph-list" onclick="toggleMenu()"></i>
+            </div>
+
+            <script src="https://unpkg.com/@phosphor-icons/web"></script>
+        </nav>
+    </header>
+
+    <section id="main-content">
+        <div class="outer-container">
+            <div class="stopwatch">
+                <div class="time" id="hours">00</div>
+                <div class="colon">:</div>
+                <div class="time" id="minutes">00</div>
+                <div class="colon">:</div>
+                <div class="time" id="seconds">00</div>
+            </div>
+
+            <div class="controls">
+                <button id="start">Start</button>
+                <button id="stop">Stop</button>
+                <button id="reset">Reset</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="/stopwatch/js/script.js"></script>
+</body>
+</html>
